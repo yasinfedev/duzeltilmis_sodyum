@@ -51,7 +51,7 @@
                 resultDiv.style.display = "block";
                 resultDiv.innerHTML = "Düzeltilmiş Sodyum: " + correctedSodium.toFixed(2) + " mEq/L";
             } else if (glucose >= 400) {
-                const correctedSodium = sodium + (((glucose - 400) / 100) * 2.4) + ((glucose - 100) / 100) * 1.6;
+                const correctedSodium = sodium + ((glucose - 400) / 100) * 2.4) + ((glucose - 100) / 100) * 1.6;
                 resultDiv.style.display = "block";
                 resultDiv.innerHTML = "Düzeltilmiş Sodyum: " + correctedSodium.toFixed(2) + " mEq/L";
             }
